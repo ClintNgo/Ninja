@@ -24,7 +24,8 @@ ninja1.showStats();
 
 class Sensei extends Ninja {
     constructor(name, health, speed, strength, wisdom = 10){
-        super(name, health, speed, strength, wisdom);
+        super(name, health, speed, strength);
+        this.wisdom = wisdom
     }
     speakWisdom(){
         this.drinkSake()
@@ -34,7 +35,7 @@ class Sensei extends Ninja {
         console.log (`health : ${this.health} speed: ${this.speed} strength: ${this.strength}`)
     }
 }
-const sensei1 = new Sensei ("Master Splinter", 210, 10, 10)
+const sensei1 = new Sensei ("Master Splinter", 200, 10, 10)
 
 console.log (sensei1);
 
